@@ -23,6 +23,9 @@ gplots
 purrr
 cowplot
 stringr
+NMF
+pkgmaker
+cluster
 
 **Input file**
 Input file is the gene expression data (raw counts) converted as a Seurat object.
