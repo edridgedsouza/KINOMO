@@ -49,3 +49,7 @@ Input file is the gene expression data (raw counts) converted as a Seurat object
 3. Meta-gene heatmaps
 4. Associated .csv files
 5. Associated .rds files
+
+** Integrating factors
+Though we recommend using custom-based methods to integrate the factors and illustrating the correlation matrix, we provide a demo script that can be used for the purpose of illustration.
+integrate_factors_kinomo_demo.R
