@@ -12,7 +12,7 @@ Please note that KINOMO needs to be implemented sample-wise and not on the integ
 
 
 **Running KINOMO**
-1. Detailed step-by-step instructions/help (in R) for running KINOMO is specified in the **'kinomo_run.R'**. Please use this script.
+1. Detailed step-by-step instructions/help (in R) for running KINOMO is specified in the **'./KINOMO_scripts/kinomo_run.R'**. Please use this script.
 2. If there is any error with respect to accessing specific sub-scripts/modules, please provide necessary path-to-file information.
 
 **Packages required**
