@@ -50,6 +50,13 @@ Input file is the gene expression data (raw counts) converted as a Seurat object
 4. Associated .csv files
 5. Associated .rds files
 
-** Integrating factors
-Though we recommend using custom-based methods to integrate the factors and illustrating the correlation matrix, we provide a demo script that can be used for the purpose of illustration.
-integrate_factors_kinomo_demo.R
+** Downstream analysis
+1. Though we recommend using custom-based methods to integrate the factors and illustrating the correlation matrix, we provide a demo script that can be used for the purpose of illustration.
+"KINOMO/downstream_analysis/integrate.factors.R"
+2. Co-correlation analysis can be run on the above integrated factor matrix using metrics such as "Spearman" or "Pearson".
+3. For identifying the barcodes corresponding to each meta-program, the following script can be used.
+"KINOMO/downstream_analysis/sort.barcodes.R"
+4.Normalized gene expression for the meta-genes per meta-programs can then be done using an EM-GMM based approach.
+"KINOMO/downstream_analysis/EM_GMM.R"
+
+
