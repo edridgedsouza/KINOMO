@@ -77,4 +77,4 @@ Normalized Gene Contribution
 6. Run EM-GMM model on the single cell (tpm) and identify the modality of the distribution per gene (will share the script for this)
 7. Based on the modality (could be unimodal, bimodal or multimodal), identify the peak center, which we define as "normalized gene contribution"
 8. Generate a matrix using the normalized gene contribution for each metagene per metaprogram
-9. Generate the checkerboard (edited) 
+9. Generate the checkerboard
