@@ -61,9 +61,9 @@ Input file is the gene expression data (raw counts) converted as a Seurat object
 
 Detailed steps for downstream analysis
 --------------------------------------
-1. integrating the best factors (top 100 genes) using the W files across all samples. You can check the github ... under Downstream_analysis
+1. integrating the best factors (top 100 genes) using the W files across all samples.
 2. run a co-correlation analysis on the above matrix using Spearman/Pearson to get the metaprograms.
-3. then for each metaprogram, you need to get the normalized gene expression for the metagenes.
+3. then for each metaprogram, get the normalized gene expression for the metagenes.
 
 Normalized Gene Contribution
 --------------------------------------
@@ -74,7 +74,7 @@ Normalized Gene Contribution
 5. run a signature built using the ranked metagenes per metaprogram on the single cell data
        i. on the individual factor
        ii. on all the factors associated with a metaprogram
-6. Run EM-GMM model on the single cell (tpm) and identify the modality of the distribution per gene (will share the script for this)
+6. Run EM-GMM model on the single cell (normalized) and identify the modality of the distribution per gene
 7. Based on the modality (could be unimodal, bimodal or multimodal), identify the peak center, which we define as "normalized gene contribution"
 8. Generate a matrix using the normalized gene contribution for each metagene per metaprogram
 9. Generate the checkerboard
