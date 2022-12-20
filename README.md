@@ -67,14 +67,14 @@ Detailed steps for downstream analysis
 
 Normalized Gene Contribution
 --------------------------------------
-3a. Do a stouffer/weighted stouffer to identify metagene ranks per metaprogram
-3b. Sort the metagenes high to low based on stouffer integrated values
-3c. From the H matrices generated sample wise (using kinomo), identify the cell barcodes associated with each factor
-3d. Subset the barcodes from integrated single cell data based on factor barcodes (per metaprogram)
-3e. run a signature built using the ranked metagenes per metaprogram on the single cell data
-       3e(i). on the individual factor
-       3e(ii). on all the factors associated with a metaprogram
-3f. Run EM-GMM model on the single cell (tpm) and identify the modality of the distribution per gene (will share the script for this)
-3g. Based on the modality (could be unimodal, bimodal or multimodal), identify the peak center, which we define as "normalized gene contribution"
-3h. Generate a matrix using the normalized gene contribution for each metagene per metaprogram
-3i. Generate the checkerboard (edited) 
+1. Do a stouffer/weighted stouffer to identify metagene ranks per metaprogram
+2. Sort the metagenes high to low based on stouffer integrated values
+3. From the H matrices generated sample wise (using kinomo), identify the cell barcodes associated with each factor
+4. Subset the barcodes from integrated single cell data based on factor barcodes (per metaprogram)
+5. run a signature built using the ranked metagenes per metaprogram on the single cell data
+       i. on the individual factor
+       ii. on all the factors associated with a metaprogram
+6. Run EM-GMM model on the single cell (tpm) and identify the modality of the distribution per gene (will share the script for this)
+7. Based on the modality (could be unimodal, bimodal or multimodal), identify the peak center, which we define as "normalized gene contribution"
+8. Generate a matrix using the normalized gene contribution for each metagene per metaprogram
+9. Generate the checkerboard (edited) 
