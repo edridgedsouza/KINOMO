@@ -59,4 +59,22 @@ Input file is the gene expression data (raw counts) converted as a Seurat object
 4.Normalized gene expression for the meta-genes per meta-programs can then be done using an EM-GMM based approach.
 "KINOMO/downstream_analysis/EM_GMM.R"
 
+Detailed steps for downstream analysis
+--------------------------------------
+1. integrating the best factors (top 100 genes) using the W files across all samples. You can check the github ... under Downstream_analysis
+2. run a co-correlation analysis on the above matrix using Spearman/Pearson to get the metaprograms.
+3. then for each metaprogram, you need to get the normalized gene expression for the metagenes.
 
+Normalized Gene Contribution
+--------------------------------------
+3a. Do a stouffer/weighted stouffer to identify metagene ranks per metaprogram
+3b. Sort the metagenes high to low based on stouffer integrated values
+3c. From the H matrices generated sample wise (using kinomo), identify the cell barcodes associated with each factor
+3d. Subset the barcodes from integrated single cell data based on factor barcodes (per metaprogram)
+3e. run a signature built using the ranked metagenes per metaprogram on the single cell data
+       3e(i). on the individual factor
+       3e(ii). on all the factors associated with a metaprogram
+3f. Run EM-GMM model on the single cell (tpm) and identify the modality of the distribution per gene (will share the script for this)
+3g. Based on the modality (could be unimodal, bimodal or multimodal), identify the peak center, which we define as "normalized gene contribution"
+3h. Generate a matrix using the normalized gene contribution for each metagene per metaprogram
+3i. Generate the checkerboard (edited) 
