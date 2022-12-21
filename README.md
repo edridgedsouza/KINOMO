@@ -56,7 +56,7 @@ Input file is the gene expression data (raw counts) converted as a Seurat object
 2. Co-correlation analysis can be run on the above integrated factor matrix using metrics such as "Spearman" or "Pearson".
 3. For identifying the barcodes corresponding to each meta-program, the following script can be used.
 "KINOMO/downstream_analysis/sort.barcodes.R"
-4.Normalized gene expression for the meta-genes per meta-programs can then be done using an EM-GMM based approach.
+4. Normalized gene expression for the meta-genes per meta-programs can then be done using an EM-GMM based approach.
 "KINOMO/downstream_analysis/EM_GMM.R"
 
 Detailed steps for downstream analysis
